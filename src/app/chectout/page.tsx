@@ -1,16 +1,20 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import Header from '../../components/header';
 
 function Checkout() {
  return (
  <div className="max-w-screen-2xl container mx-auto pb-8 px-4">
+ {/* Header Section */}
+ <div className="bg-gray-100">
+ <Header />
+ </div>
 
  {/* Banner Section */}
  <div className="relative">
  <Image
- src="/image/shop.jpeg"
+ src="/shop.jpeg"
  alt="Checkout Banner"
  height={400}
  width={1600}
@@ -21,7 +25,7 @@ function Checkout() {
  </h1>
  </div>
 
- {/* Placeholder Content */}
+ {/* Billing Information Section */}
  <div className="flex flex-col items-center justify-center mt-10 text-center">
  <h2 className="text-xl font-semibold">Billing Information</h2>
  <p className="mt-4 text-gray-500">
@@ -54,6 +58,7 @@ function Checkout() {
  </div>
  </div>
 
+ {/* Order Summary Section */}
  <div className="flex flex-col items-center justify-center mt-10 text-center">
  <h2 className="text-xl font-semibold">Order Summary</h2>
  <p className="mt-4 text-gray-500">
